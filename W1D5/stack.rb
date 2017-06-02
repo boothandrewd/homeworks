@@ -1,4 +1,4 @@
-# stack.rb
+# W1D5/stack.rb
 
 class Stack
   def initialize
