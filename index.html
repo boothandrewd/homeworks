@@ -5,66 +5,117 @@
     <title>Andrew's Recipe</title>
   </head>
   <body>
+
     <header>
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Appacademylogo.png/175px-Appacademylogo.png" alt="">
       <h1>Pork Tenderloin</h1>
     </header>
 
-    <aside class="">
-      <h2>Ingredients</h2>
-      <table>
-        <tr>
-          <td>Oil</td>
-          <td>1 cup</td>
-        </tr>
-        <tr>
-          <td>Soy sauce</td>
-          <td>1/2 cup</td>
-        </tr>
-        <tr>
-          <td>Red wine vinegar</td>
-          <td>1 tablespoon</td>
-        </tr>
-        <tr>
-          <td>Honey</td>
-          <td>2 tablespoons</td>
-        </tr>
-        <tr>
-          <td>Brown sugar</td>
-          <td>2 tablespoons</td>
-        </tr>
-        <tr>
-          <td>Minced garlic</td>
-          <td>1 tablespoon</td>
-        </tr>
-      </table>
-    </aside>
+    <ul>
+      <li><a href="#ingredients">Ingredients</a></li>
+      <li><a href="#description">Description</a></li>
+      <li><a href="#directions">Directions</a></li>
+    </ul>
+
+    <a name="ingredients">
+      <aside>
+        <h2>Ingredients</h2>
+        <table>
+          <tr>
+            <td>Oil</td>
+            <td>1 cup</td>
+          </tr>
+          <tr>
+            <td>Soy sauce</td>
+            <td>1/2 cup</td>
+          </tr>
+          <tr>
+            <td>Red wine vinegar</td>
+            <td>1 tablespoon</td>
+          </tr>
+          <tr>
+            <td>Honey</td>
+            <td>2 tablespoons</td>
+          </tr>
+          <tr>
+            <td>Brown sugar</td>
+            <td>2 tablespoons</td>
+          </tr>
+          <tr>
+            <td>Minced garlic</td>
+            <td>1 tablespoon</td>
+          </tr>
+        </table>
+      </aside>
+    </a>
 
     <section>
-      <figure>
-        <h2>Description</h2>
-        <p>Juicy, delicious pork with a vinegar &amp; ginger based marinade.</p>
+      <a name="description">
+        <figure>
+          <h2>Description</h2>
+          <p>Juicy, delicious pork with a vinegar and ginger based marinade.</p>
 
-        <img src="https://addapinch.com/wp-content/blogs.dir/3/files/2013/04/bbq-pork-tenderloin-DSC_2433.jpg" alt="">
+          <img src="https://addapinch.com/wp-content/blogs.dir/3/files/2013/04/bbq-pork-tenderloin-DSC_2433.jpg" alt="">
 
-        <figcaption>
-          <a href="https://en.wikipedia.org/wiki/Pork_tenderloin">Fresh off the grill.</a>
-        </figcaption>
-      </figure>
+          <figcaption>
+            <a href="https://en.wikipedia.org/wiki/Pork_tenderloin">Fresh off the grill.</a>
+          </figcaption>
+        </figure>
+      </a>
 
-      <h2>Directions</h2>
-      <ol>
-        <li>Combine marinade ingredients together in a large bowl and stir.</li>
-        <li>Remove tenderloin from package and remove excess fat from cut.</li>
-        <li>Tenderize the meat by poking holes throughout with a fork. This also increases marinade absorption.</li>
-        <li>Transfer marinade and pork to ziploc bag. Let marinate for 2+ hours.</li>
-        <li>Once marinated, throw tenderloin on a hot grill. Grill 6 minutes a side.</li>
-        <li>Serve.</li>
-      </ol>
+      <a name="directions">
+        <h2>Directions</h2>
+        <ol>
+          <li>Combine marinade ingredients together in a large bowl and stir.</li>
+          <li>Remove tenderloin from package and remove excess fat from cut.</li>
+          <li>Tenderize the meat by poking holes throughout with a fork. This also increases marinade absorption.</li>
+          <li>Transfer marinade and pork to ziploc bag. Let marinate for 2+ hours.</li>
+          <li>Once marinated, throw tenderloin on a hot grill. Grill 6 minutes a side.</li>
+          <li>Serve.</li>
+        </ol>
+      </a>
     </section>
+
+    <section>
+      <form action="/reviews" method="post">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
+
+        <br>
+
+        <label for="rating">Rating</label>
+        <!-- <input id="rating" type="text" name="rating"> -->
+        <input type="radio" name="rating" value="1" checked> 1
+        <input type="radio" name="rating" value="2"> 2
+        <input type="radio" name="rating" value="3"> 3
+        <input type="radio" name="rating" value="4"> 4
+        <input type="radio" name="rating" value="5"> 5
+
+        <br>
+
+        <label for="cooking_expertise">Experience</label>
+        <select id="cooking_expertise" name="cooking_expertise">
+          <option disabled selected>Select Cooking Expertise</option>
+          <option value="sometimes">Sometimes Cook</option>
+          <option value="everyday">Cook Everyday</option>
+          <option value="hobby">Cooking is a Hobby</option>
+          <option value="chef">Professional Chef</option>
+        </select>
+
+        <br>
+
+        <label>Review
+          <textarea name="name"></textarea>
+        </label>
+
+        <input type="submit">
+      </form>
+    </section>
+
     <footer>
       <p>Author: Andrew Booth</p>
       <p>A recipe courtesy of <a href="http://dewspics.com">Dewey Booth</a>.</p>
     </footer>
+
   </body>
 </html>
