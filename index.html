@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Meta -->
     <meta charset="utf-8">
+    <meta name="description" content="Best tenderloin east of the Mississippi">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css_reset.css">
+
+    <!-- JS -->
+    <script src="external_javascript_example.js" charset="utf-8" defer></script>
+
+    <!-- Page -->
     <title>Andrew's Recipe</title>
   </head>
   <body>
 
+    <!-- Header -->
     <header>
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Appacademylogo.png/175px-Appacademylogo.png" alt="">
       <h1>Pork Tenderloin</h1>
     </header>
 
-    <ul>
-      <li><a href="#ingredients">Ingredients</a></li>
-      <li><a href="#description">Description</a></li>
-      <li><a href="#directions">Directions</a></li>
-    </ul>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#ingredients">Ingredients</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#directions">Directions</a></li>
+      </ul>
+    </nav>
 
+    <!-- Ingredients section -->
     <a name="ingredients">
       <aside>
         <h2>Ingredients</h2>
@@ -49,6 +64,7 @@
       </aside>
     </a>
 
+    <!-- Description and directions -->
     <section>
       <a name="description">
         <figure>
@@ -76,15 +92,17 @@
       </a>
     </section>
 
-    <section>
-      <form action="/reviews" method="post">
+    <!-- Review section -->
+    <section id="reviews">
+      <form action="/reviews" method="post" id="review-form">
+        <!-- Name input -->
         <label for="name">Name</label>
         <input id="name" type="text" name="name">
 
         <br>
 
+        <!-- Rating radio buttons -->
         <label for="rating">Rating</label>
-        <!-- <input id="rating" type="text" name="rating"> -->
         <input type="radio" name="rating" value="1" checked> 1
         <input type="radio" name="rating" value="2"> 2
         <input type="radio" name="rating" value="3"> 3
@@ -93,6 +111,7 @@
 
         <br>
 
+        <!-- Experience dropdown -->
         <label for="cooking_expertise">Experience</label>
         <select id="cooking_expertise" name="cooking_expertise">
           <option disabled selected>Select Cooking Expertise</option>
@@ -104,6 +123,7 @@
 
         <br>
 
+        <!-- Review content -->
         <label>Review
           <textarea name="name"></textarea>
         </label>
