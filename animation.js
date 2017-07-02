@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const BEZIER_HEIGHT = 400;
   const BEZ_FNS = [['sin', 'cos'], ['sin', 'cos']];
-  const BEZ_COEFFS = [[1, -1,], [-1, 1]];
+  const BEZ_COEFFS = [[1, -1], [-1, 1]];
 
   const BACKGROUND_COLOR = 'MintCream';
   const MAIN_COLOR = 'MediumAquaMarine';
@@ -110,6 +110,5 @@ class Pair2d {
 
   newFromOffset (...offsetPair) {
     return new Pair2d(...this.pairOffset(...offsetPair));
-
   }
 }
