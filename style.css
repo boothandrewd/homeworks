@@ -1,3 +1,28 @@
 body {
-  background-color: MintCream;
+  font-family: sans-serif;
+  background-color: WhiteSmoke;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.ingredients-list {
+  list-style: square;
+}
+
+ol li {
+  list-style: lower-roman;
+}
+
+header > img {
+  width: 100px;
+}
+
+ul li a {
+  text-decoration: none;
 }

@@ -6,7 +6,7 @@
     <meta name="description" content="Best tenderloin east of the Mississippi">
 
     <!-- CSS -->
-    <!-- <link rel="stylesheet" href="css_reset.css"> -->
+    <link rel="stylesheet" href="css_reset.css">
     <link rel="stylesheet" href="style.css">
 
     <!-- JS -->
@@ -26,9 +26,9 @@
     <!-- Navbar -->
     <nav>
       <ul>
-        <li><a href="#ingredients">Ingredients</a></li>
-        <li><a href="#description">Description</a></li>
-        <li><a href="#directions">Directions</a></li>
+        <li class="ingredients-list"><a href="#ingredients">Ingredients</a></li>
+        <li class="ingredients-list"><a href="#description">Description</a></li>
+        <li class="ingredients-list"><a href="#directions">Directions</a></li>
       </ul>
     </nav>
 
@@ -95,6 +95,11 @@
 
     <!-- Review section -->
     <section id="reviews">
+      <h2>Reviews</h2>
+      <article class="review">
+        <p>Yum!</p>
+      </article>
+      <h2>Write Review</h2>
       <form action="/reviews" method="post" id="review-form">
         <!-- Name input -->
         <label for="name">Name</label>
