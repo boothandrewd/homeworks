@@ -14,29 +14,3 @@ article {
   text-decoration: inherit;
   color: inherit;
 }
-
-input[type="radio"], select, input[type="submit"] {
-  cursor: pointer;
-  outline: none;
-}
-
-form > input:last-child {
-  background-color: Gold;
-
-}
-
-a[name="directions"] ol > li:nth-child(2n) {
-  background-color: LightGray;
-}
-
-h2 + .review {
-  border-top: 1px solid Black;
-}
-
-input[type="radio"] {
-  -webkit-appearance: none;
-  width: 27px;
-  height: 27px;
-  background-image: url(./assets/stars.png);
-  vertical-align: bottom;
-}

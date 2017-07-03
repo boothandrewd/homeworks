@@ -21,8 +21,44 @@ ol li {
 
 header > img {
   width: 100px;
+  float: left;
+}
+
+header::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 ul li a {
   text-decoration: none;
+}
+
+input[type="radio"], select, input[type="submit"] {
+  cursor: pointer;
+  outline: none;
+}
+
+form > input:last-child {
+  background-color: Gold;
+}
+
+a[name="directions"] ol > li:nth-child(2n) {
+  background-color: LightGray;
+}
+
+h2 + .review {
+  border-top: 1px solid Black;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 27px;
+  height: 27px;
+  background-image: url(./assets/stars.png);
+  vertical-align: bottom;
+}
+
+nav {
+  float: right;
 }
