@@ -28,17 +28,21 @@ class GiphysSearch extends React.Component {
   render() {
     const { handleChange, handleSubmit } = this;
     const searchTerm = this.state.searchTerm;
+    const giphys = this.props.giphys;
 
     return (
       <div>
-        <h3>Find GIFs</h3>
-        <form>
+        <form className='search-bar'>
           <label>Search:
             <input onChange={handleChange} value={searchTerm} />
           </label>
 
           <button onClick={handleSubmit}>Submit</button>
         </form>
+
+        <br />
+
+        <GiphysIndex giphys={giphys} />
       </div>
     );
   }
